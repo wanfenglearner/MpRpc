@@ -49,3 +49,8 @@ void MprpcApplication::init(int argc, char **argv)
     std::cout << "zookeeper_port: "<< conf_.getFile("zookeeper_port") << std::endl;
 
 }
+// 得到配置信息
+MprpcConfig &MprpcApplication::getConfig()
+{
+    return conf_;
+}

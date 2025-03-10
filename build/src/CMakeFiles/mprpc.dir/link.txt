@@ -1,1 +1,2 @@
-/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libmprpc.so -o ../../lib/libmprpc.so CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.o CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o   -L/usr/local/lib  -L/home/robin/projects/MpRpc/lib  -Wl,-rpath,/usr/local/lib:/home/robin/projects/MpRpc/lib -lmuduo_net -lmuduo_base -lpthread 
+/usr/bin/ar qc ../../lib/libmprpc.a CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.o CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o
+/usr/bin/ranlib ../../lib/libmprpc.a

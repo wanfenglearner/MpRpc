@@ -13,6 +13,8 @@ public:
     static MprpcApplication *instance();
     // 初始化框架
     void init(int argc, char **argv);
+    // 得到配置信息
+    MprpcConfig &getConfig();
 private:
     // 配置信息
     MprpcConfig conf_;
