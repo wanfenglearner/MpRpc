@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/robin/projects/MpRpc/example/user.pb.cc" "example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o" "gcc" "example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o.d"
-  "/home/robin/projects/MpRpc/example/callee/userservice.cpp" "example/callee/CMakeFiles/provider.dir/userservice.cpp.o" "gcc" "example/callee/CMakeFiles/provider.dir/userservice.cpp.o.d"
+  "/home/robin/project/MpRpc/example/user.pb.cc" "example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o" "gcc" "example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o.d"
+  "/home/robin/project/MpRpc/example/callee/userservice.cpp" "example/callee/CMakeFiles/provider.dir/userservice.cpp.o" "gcc" "example/callee/CMakeFiles/provider.dir/userservice.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/robin/projects/MpRpc/build/src/CMakeFiles/mprpc.dir/DependInfo.cmake"
+  "/home/robin/project/MpRpc/build/src/CMakeFiles/mprpc.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

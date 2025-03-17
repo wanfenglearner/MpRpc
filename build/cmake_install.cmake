@@ -1,4 +1,4 @@
-# Install script for directory: /home/robin/projects/MpRpc
+# Install script for directory: /home/robin/project/MpRpc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/robin/projects/MpRpc/build/src/cmake_install.cmake")
-  include("/home/robin/projects/MpRpc/build/example/cmake_install.cmake")
+  include("/home/robin/project/MpRpc/build/src/cmake_install.cmake")
+  include("/home/robin/project/MpRpc/build/example/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/robin/projects/MpRpc/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/robin/project/MpRpc/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

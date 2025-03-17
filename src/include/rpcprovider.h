@@ -21,7 +21,7 @@ private:
     // 消息回调
     void onMessage(const muduo::net::TcpConnectionPtr & conn, muduo::net::Buffer * buffer, muduo::Timestamp);
     // 调用回调 处理response的参数序列化以及网络发送
-    void sendRpcResponse(muduo::net::TcpConnectionPtr &, google::protobuf::Message *);
+    void sendRpcResponse(const muduo::net::TcpConnectionPtr & conn,  google::protobuf::Message * msg);
 
 private:
     // 定义事件循环

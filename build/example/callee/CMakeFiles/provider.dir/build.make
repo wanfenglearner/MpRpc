@@ -53,10 +53,10 @@ RM = /home/robin/workplace/cmake-3.22.0-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robin/projects/MpRpc
+CMAKE_SOURCE_DIR = /home/robin/project/MpRpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robin/projects/MpRpc/build
+CMAKE_BINARY_DIR = /home/robin/project/MpRpc/build
 
 # Include any dependencies generated for this target.
 include example/callee/CMakeFiles/provider.dir/depend.make
@@ -72,30 +72,30 @@ include example/callee/CMakeFiles/provider.dir/flags.make
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: example/callee/CMakeFiles/provider.dir/flags.make
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: ../example/callee/userservice.cpp
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: example/callee/CMakeFiles/provider.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robin/projects/MpRpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/callee/CMakeFiles/provider.dir/userservice.cpp.o"
-	cd /home/robin/projects/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/callee/CMakeFiles/provider.dir/userservice.cpp.o -MF CMakeFiles/provider.dir/userservice.cpp.o.d -o CMakeFiles/provider.dir/userservice.cpp.o -c /home/robin/projects/MpRpc/example/callee/userservice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robin/project/MpRpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/callee/CMakeFiles/provider.dir/userservice.cpp.o"
+	cd /home/robin/project/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/callee/CMakeFiles/provider.dir/userservice.cpp.o -MF CMakeFiles/provider.dir/userservice.cpp.o.d -o CMakeFiles/provider.dir/userservice.cpp.o -c /home/robin/project/MpRpc/example/callee/userservice.cpp
 
 example/callee/CMakeFiles/provider.dir/userservice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/provider.dir/userservice.cpp.i"
-	cd /home/robin/projects/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robin/projects/MpRpc/example/callee/userservice.cpp > CMakeFiles/provider.dir/userservice.cpp.i
+	cd /home/robin/project/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robin/project/MpRpc/example/callee/userservice.cpp > CMakeFiles/provider.dir/userservice.cpp.i
 
 example/callee/CMakeFiles/provider.dir/userservice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/provider.dir/userservice.cpp.s"
-	cd /home/robin/projects/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robin/projects/MpRpc/example/callee/userservice.cpp -o CMakeFiles/provider.dir/userservice.cpp.s
+	cd /home/robin/project/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robin/project/MpRpc/example/callee/userservice.cpp -o CMakeFiles/provider.dir/userservice.cpp.s
 
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: example/callee/CMakeFiles/provider.dir/flags.make
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: ../example/user.pb.cc
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: example/callee/CMakeFiles/provider.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robin/projects/MpRpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o"
-	cd /home/robin/projects/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o -MF CMakeFiles/provider.dir/__/user.pb.cc.o.d -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/robin/projects/MpRpc/example/user.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robin/project/MpRpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o"
+	cd /home/robin/project/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o -MF CMakeFiles/provider.dir/__/user.pb.cc.o.d -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/robin/project/MpRpc/example/user.pb.cc
 
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/provider.dir/__/user.pb.cc.i"
-	cd /home/robin/projects/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robin/projects/MpRpc/example/user.pb.cc > CMakeFiles/provider.dir/__/user.pb.cc.i
+	cd /home/robin/project/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robin/project/MpRpc/example/user.pb.cc > CMakeFiles/provider.dir/__/user.pb.cc.i
 
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/provider.dir/__/user.pb.cc.s"
-	cd /home/robin/projects/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robin/projects/MpRpc/example/user.pb.cc -o CMakeFiles/provider.dir/__/user.pb.cc.s
+	cd /home/robin/project/MpRpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robin/project/MpRpc/example/user.pb.cc -o CMakeFiles/provider.dir/__/user.pb.cc.s
 
 # Object files for target provider
 provider_OBJECTS = \
@@ -110,18 +110,18 @@ provider_EXTERNAL_OBJECTS =
 ../bin/provider: example/callee/CMakeFiles/provider.dir/build.make
 ../bin/provider: ../lib/libmprpc.a
 ../bin/provider: example/callee/CMakeFiles/provider.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robin/projects/MpRpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/provider"
-	cd /home/robin/projects/MpRpc/build/example/callee && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/provider.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robin/project/MpRpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/provider"
+	cd /home/robin/project/MpRpc/build/example/callee && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/provider.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 example/callee/CMakeFiles/provider.dir/build: ../bin/provider
 .PHONY : example/callee/CMakeFiles/provider.dir/build
 
 example/callee/CMakeFiles/provider.dir/clean:
-	cd /home/robin/projects/MpRpc/build/example/callee && $(CMAKE_COMMAND) -P CMakeFiles/provider.dir/cmake_clean.cmake
+	cd /home/robin/project/MpRpc/build/example/callee && $(CMAKE_COMMAND) -P CMakeFiles/provider.dir/cmake_clean.cmake
 .PHONY : example/callee/CMakeFiles/provider.dir/clean
 
 example/callee/CMakeFiles/provider.dir/depend:
-	cd /home/robin/projects/MpRpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robin/projects/MpRpc /home/robin/projects/MpRpc/example/callee /home/robin/projects/MpRpc/build /home/robin/projects/MpRpc/build/example/callee /home/robin/projects/MpRpc/build/example/callee/CMakeFiles/provider.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robin/project/MpRpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robin/project/MpRpc /home/robin/project/MpRpc/example/callee /home/robin/project/MpRpc/build /home/robin/project/MpRpc/build/example/callee /home/robin/project/MpRpc/build/example/callee/CMakeFiles/provider.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/callee/CMakeFiles/provider.dir/depend
 

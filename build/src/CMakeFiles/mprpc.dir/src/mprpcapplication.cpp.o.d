@@ -1,8 +1,8 @@
 src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.o: \
- /home/robin/projects/MpRpc/src/src/mprpcapplication.cpp \
+ /home/robin/project/MpRpc/src/src/mprpcapplication.cpp \
  /usr/include/stdc-predef.h \
- /home/robin/projects/MpRpc/src/include/mprpcapplication.h \
- /home/robin/projects/MpRpc/src/include/mprpcconfig.h \
+ /home/robin/project/MpRpc/src/include/mprpcapplication.h \
+ /home/robin/project/MpRpc/src/include/mprpcconfig.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/unordered_map \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/utility \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++config.h \

@@ -1,6 +1,6 @@
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: \
- /home/robin/projects/MpRpc/example/user.pb.cc /usr/include/stdc-predef.h \
- /home/robin/projects/MpRpc/example/user.pb.h \
+ /home/robin/project/MpRpc/example/user.pb.cc /usr/include/stdc-predef.h \
+ /home/robin/project/MpRpc/example/user.pb.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/limits \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

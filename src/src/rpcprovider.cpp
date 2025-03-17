@@ -1,6 +1,7 @@
 #include "rpcprovider.h"
 #include "mprpcapplication.h"
 #include <google/protobuf/descriptor.h>
+#include <google/protobuf/stubs/callback.h>
 #include "rpcheader.pb.h"
 #include <functional>
 #include <thread>
@@ -117,7 +118,7 @@ void RpcProvider::onMessage(const muduo::net::TcpConnectionPtr & conn, muduo::ne
 
     // 找到对应的服务和方法
     auto sit = serviceMap_.find(server_name);
-    if(sit.end() == serviceMap_.end())
+    if(sit == serviceMap_.end())
     {
         std::cerr << "server_name not find" << std::endl;
         return;
@@ -132,28 +133,41 @@ void RpcProvider::onMessage(const muduo::net::TcpConnectionPtr & conn, muduo::ne
     // 得到服务对象
     google::protobuf::Service *service = sit->second.service_;
     // 得到服务的描述
-    google::protobuf::MethodDescriptor *method = mit->second;
+     const google::protobuf::MethodDescriptor *method = mit->second;
 
     // 生成rpc request 和response 信息
-    google::protobuf::Message *request = service->GetRequestPrototype(method).New();
+     google::protobuf::Message *request = service->GetRequestPrototype(method).New();
     if(!request->ParseFromString(args_str))
     {
         std::cout << "request->ParseFromString(args_str) err" << std::endl;
         return;
     }
-    google::protobuf::Message *response = service->GetResponsePrototype(method).New();
+     google::protobuf::Message *response = service->GetResponsePrototype(method).New();
 
     // 执行回调函数
-    google::protobuf::NewCallback();
+    google::protobuf::Closure* done = google::protobuf::NewCallback
+    <RpcProvider, const muduo::net::TcpConnectionPtr&, 
+      google::protobuf::Message *>
+
+     (this, &RpcProvider::sendRpcResponse, conn, response);
     // 调用本地服务
 
-    service->CallMethod(method, nullptr, request, response, )
-
-
+    service->CallMethod(method, nullptr, request, response, done);
 }
 
 // 调用回调 处理response的参数序列化以及网络发送
-void RpcProvider::sendRpcResponse(muduo::net::TcpConnectionPtr& conn, google::protobuf::Message * response)
+void RpcProvider::sendRpcResponse(const muduo::net::TcpConnectionPtr& conn,  google::protobuf::Message * response)
 {
-
+    // 将响应序列化然后通过网络发送出去
+    std::string response_str;
+    if(response->SerializeToString(&response_str))
+    {
+        conn->send(response_str);
+    }
+    else
+    {
+        std::cerr << "response->SerializeToString err" << std::endl;
+    }
+    // 主动关闭连接
+    conn->shutdown();
 }

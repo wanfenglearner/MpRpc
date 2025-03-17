@@ -57,10 +57,10 @@ RM = /home/robin/workplace/cmake-3.22.0-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robin/projects/MpRpc
+CMAKE_SOURCE_DIR = /home/robin/project/MpRpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robin/projects/MpRpc/build
+CMAKE_BINARY_DIR = /home/robin/project/MpRpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/robin/projects/MpRpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/robin/projects/MpRpc/build/CMakeFiles /home/robin/projects/MpRpc/build/example/callee//CMakeFiles/progress.marks
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robin/projects/MpRpc/build/CMakeFiles 0
+	cd /home/robin/project/MpRpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/robin/project/MpRpc/build/CMakeFiles /home/robin/project/MpRpc/build/example/callee//CMakeFiles/progress.marks
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robin/project/MpRpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/clean
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/preinstall
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/preinstall
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/robin/projects/MpRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robin/project/MpRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 example/callee/CMakeFiles/provider.dir/rule:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/CMakeFiles/provider.dir/rule
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/CMakeFiles/provider.dir/rule
 .PHONY : example/callee/CMakeFiles/provider.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ provider: example/callee/CMakeFiles/provider.dir/rule
 
 # fast build rule for target.
 provider/fast:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
 .PHONY : provider/fast
 
 __/user.pb.o: __/user.pb.cc.o
@@ -135,7 +135,7 @@ __/user.pb.o: __/user.pb.cc.o
 
 # target to build an object file
 __/user.pb.cc.o:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
 .PHONY : __/user.pb.cc.o
 
 __/user.pb.i: __/user.pb.cc.i
@@ -143,7 +143,7 @@ __/user.pb.i: __/user.pb.cc.i
 
 # target to preprocess a source file
 __/user.pb.cc.i:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.i
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.i
 .PHONY : __/user.pb.cc.i
 
 __/user.pb.s: __/user.pb.cc.s
@@ -151,7 +151,7 @@ __/user.pb.s: __/user.pb.cc.s
 
 # target to generate assembly for a file
 __/user.pb.cc.s:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.s
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.s
 .PHONY : __/user.pb.cc.s
 
 userservice.o: userservice.cpp.o
@@ -159,7 +159,7 @@ userservice.o: userservice.cpp.o
 
 # target to build an object file
 userservice.cpp.o:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/userservice.cpp.o
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/userservice.cpp.o
 .PHONY : userservice.cpp.o
 
 userservice.i: userservice.cpp.i
@@ -167,7 +167,7 @@ userservice.i: userservice.cpp.i
 
 # target to preprocess a source file
 userservice.cpp.i:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/userservice.cpp.i
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/userservice.cpp.i
 .PHONY : userservice.cpp.i
 
 userservice.s: userservice.cpp.s
@@ -175,7 +175,7 @@ userservice.s: userservice.cpp.s
 
 # target to generate assembly for a file
 userservice.cpp.s:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/userservice.cpp.s
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/userservice.cpp.s
 .PHONY : userservice.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/robin/projects/MpRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robin/project/MpRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

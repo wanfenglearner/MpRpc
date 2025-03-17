@@ -57,10 +57,10 @@ RM = /home/robin/workplace/cmake-3.22.0-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robin/projects/MpRpc
+CMAKE_SOURCE_DIR = /home/robin/project/MpRpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robin/projects/MpRpc/build
+CMAKE_BINARY_DIR = /home/robin/project/MpRpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/robin/projects/MpRpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/robin/projects/MpRpc/build/CMakeFiles /home/robin/projects/MpRpc/build/src//CMakeFiles/progress.marks
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robin/projects/MpRpc/build/CMakeFiles 0
+	cd /home/robin/project/MpRpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/robin/project/MpRpc/build/CMakeFiles /home/robin/project/MpRpc/build/src//CMakeFiles/progress.marks
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robin/project/MpRpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/robin/projects/MpRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robin/project/MpRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/mprpc.dir/rule:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/mprpc.dir/rule
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/mprpc.dir/rule
 .PHONY : src/CMakeFiles/mprpc.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ mprpc: src/CMakeFiles/mprpc.dir/rule
 
 # fast build rule for target.
 mprpc/fast:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
 .PHONY : mprpc/fast
 
 src/mprpcapplication.o: src/mprpcapplication.cpp.o
@@ -135,7 +135,7 @@ src/mprpcapplication.o: src/mprpcapplication.cpp.o
 
 # target to build an object file
 src/mprpcapplication.cpp.o:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.o
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.o
 .PHONY : src/mprpcapplication.cpp.o
 
 src/mprpcapplication.i: src/mprpcapplication.cpp.i
@@ -143,7 +143,7 @@ src/mprpcapplication.i: src/mprpcapplication.cpp.i
 
 # target to preprocess a source file
 src/mprpcapplication.cpp.i:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.i
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.i
 .PHONY : src/mprpcapplication.cpp.i
 
 src/mprpcapplication.s: src/mprpcapplication.cpp.s
@@ -151,15 +151,39 @@ src/mprpcapplication.s: src/mprpcapplication.cpp.s
 
 # target to generate assembly for a file
 src/mprpcapplication.cpp.s:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.s
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.s
 .PHONY : src/mprpcapplication.cpp.s
+
+src/mprpcchannel.o: src/mprpcchannel.cpp.o
+.PHONY : src/mprpcchannel.o
+
+# target to build an object file
+src/mprpcchannel.cpp.o:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcchannel.cpp.o
+.PHONY : src/mprpcchannel.cpp.o
+
+src/mprpcchannel.i: src/mprpcchannel.cpp.i
+.PHONY : src/mprpcchannel.i
+
+# target to preprocess a source file
+src/mprpcchannel.cpp.i:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcchannel.cpp.i
+.PHONY : src/mprpcchannel.cpp.i
+
+src/mprpcchannel.s: src/mprpcchannel.cpp.s
+.PHONY : src/mprpcchannel.s
+
+# target to generate assembly for a file
+src/mprpcchannel.cpp.s:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcchannel.cpp.s
+.PHONY : src/mprpcchannel.cpp.s
 
 src/mprpcconfig.o: src/mprpcconfig.cpp.o
 .PHONY : src/mprpcconfig.o
 
 # target to build an object file
 src/mprpcconfig.cpp.o:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o
 .PHONY : src/mprpcconfig.cpp.o
 
 src/mprpcconfig.i: src/mprpcconfig.cpp.i
@@ -167,7 +191,7 @@ src/mprpcconfig.i: src/mprpcconfig.cpp.i
 
 # target to preprocess a source file
 src/mprpcconfig.cpp.i:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.i
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.i
 .PHONY : src/mprpcconfig.cpp.i
 
 src/mprpcconfig.s: src/mprpcconfig.cpp.s
@@ -175,15 +199,39 @@ src/mprpcconfig.s: src/mprpcconfig.cpp.s
 
 # target to generate assembly for a file
 src/mprpcconfig.cpp.s:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.s
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.s
 .PHONY : src/mprpcconfig.cpp.s
+
+src/rpcheader.pb.o: src/rpcheader.pb.cc.o
+.PHONY : src/rpcheader.pb.o
+
+# target to build an object file
+src/rpcheader.pb.cc.o:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcheader.pb.cc.o
+.PHONY : src/rpcheader.pb.cc.o
+
+src/rpcheader.pb.i: src/rpcheader.pb.cc.i
+.PHONY : src/rpcheader.pb.i
+
+# target to preprocess a source file
+src/rpcheader.pb.cc.i:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcheader.pb.cc.i
+.PHONY : src/rpcheader.pb.cc.i
+
+src/rpcheader.pb.s: src/rpcheader.pb.cc.s
+.PHONY : src/rpcheader.pb.s
+
+# target to generate assembly for a file
+src/rpcheader.pb.cc.s:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcheader.pb.cc.s
+.PHONY : src/rpcheader.pb.cc.s
 
 src/rpcprovider.o: src/rpcprovider.cpp.o
 .PHONY : src/rpcprovider.o
 
 # target to build an object file
 src/rpcprovider.cpp.o:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o
 .PHONY : src/rpcprovider.cpp.o
 
 src/rpcprovider.i: src/rpcprovider.cpp.i
@@ -191,7 +239,7 @@ src/rpcprovider.i: src/rpcprovider.cpp.i
 
 # target to preprocess a source file
 src/rpcprovider.cpp.i:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.i
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.i
 .PHONY : src/rpcprovider.cpp.i
 
 src/rpcprovider.s: src/rpcprovider.cpp.s
@@ -199,7 +247,7 @@ src/rpcprovider.s: src/rpcprovider.cpp.s
 
 # target to generate assembly for a file
 src/rpcprovider.cpp.s:
-	cd /home/robin/projects/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.s
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.s
 .PHONY : src/rpcprovider.cpp.s
 
 # Help Target
@@ -214,9 +262,15 @@ help:
 	@echo "... src/mprpcapplication.o"
 	@echo "... src/mprpcapplication.i"
 	@echo "... src/mprpcapplication.s"
+	@echo "... src/mprpcchannel.o"
+	@echo "... src/mprpcchannel.i"
+	@echo "... src/mprpcchannel.s"
 	@echo "... src/mprpcconfig.o"
 	@echo "... src/mprpcconfig.i"
 	@echo "... src/mprpcconfig.s"
+	@echo "... src/rpcheader.pb.o"
+	@echo "... src/rpcheader.pb.i"
+	@echo "... src/rpcheader.pb.s"
 	@echo "... src/rpcprovider.o"
 	@echo "... src/rpcprovider.i"
 	@echo "... src/rpcprovider.s"
@@ -231,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/robin/projects/MpRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robin/project/MpRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

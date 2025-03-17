@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/robin/projects/MpRpc/example -I/home/robin/projects/MpRpc/src/include
+CXX_INCLUDES = -I/home/robin/project/MpRpc/example -I/home/robin/project/MpRpc/src/include
 
 CXX_FLAGS = -g -std=gnu++11
 

@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/robin/projects/MpRpc/src/src/mprpcapplication.cpp" "src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.o.d"
-  "/home/robin/projects/MpRpc/src/src/mprpcconfig.cpp" "src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o.d"
-  "/home/robin/projects/MpRpc/src/src/rpcprovider.cpp" "src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o.d"
+  "/home/robin/project/MpRpc/src/src/mprpcapplication.cpp" "src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/src/mprpcapplication.cpp.o.d"
+  "/home/robin/project/MpRpc/src/src/mprpcchannel.cpp" "src/CMakeFiles/mprpc.dir/src/mprpcchannel.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/src/mprpcchannel.cpp.o.d"
+  "/home/robin/project/MpRpc/src/src/mprpcconfig.cpp" "src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o.d"
+  "/home/robin/project/MpRpc/src/src/rpcheader.pb.cc" "src/CMakeFiles/mprpc.dir/src/rpcheader.pb.cc.o" "gcc" "src/CMakeFiles/mprpc.dir/src/rpcheader.pb.cc.o.d"
+  "/home/robin/project/MpRpc/src/src/rpcprovider.cpp" "src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o.d"
   )
 
 # Targets to which this target links.

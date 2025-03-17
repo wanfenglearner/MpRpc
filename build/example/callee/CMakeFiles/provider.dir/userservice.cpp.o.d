@@ -1,5 +1,5 @@
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: \
- /home/robin/projects/MpRpc/example/callee/userservice.cpp \
+ /home/robin/project/MpRpc/example/callee/userservice.cpp \
  /usr/include/stdc-predef.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++config.h \
@@ -115,7 +115,7 @@ example/callee/CMakeFiles/provider.dir/userservice.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/ostream.tcc \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/istream \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/istream.tcc \
- /home/robin/projects/MpRpc/example/user.pb.h \
+ /home/robin/project/MpRpc/example/user.pb.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/limits \
  /usr/local/include/google/protobuf/port_def.inc \
  /usr/local/include/google/protobuf/port_undef.inc \
@@ -236,9 +236,9 @@ example/callee/CMakeFiles/provider.dir/userservice.cpp.o: \
  /usr/local/include/google/protobuf/extension_set.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert \
  /usr/local/include/google/protobuf/service.h \
- /home/robin/projects/MpRpc/src/include/mprpcapplication.h \
- /home/robin/projects/MpRpc/src/include/mprpcconfig.h \
- /home/robin/projects/MpRpc/src/include/rpcprovider.h \
+ /home/robin/project/MpRpc/src/include/mprpcapplication.h \
+ /home/robin/project/MpRpc/src/include/mprpcconfig.h \
+ /home/robin/project/MpRpc/src/include/rpcprovider.h \
  /usr/include/muduo/net/TcpServer.h /usr/include/muduo/base/Atomic.h \
  /usr/include/muduo/base/noncopyable.h /usr/include/muduo/base/Types.h \
  /usr/include/muduo/net/TcpConnection.h \
