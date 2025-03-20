@@ -109,13 +109,13 @@ void RpcProvider::onMessage(const muduo::net::TcpConnectionPtr & conn, muduo::ne
     // 取出请求的参数
     std::string args_str = buff.substr(4 + rpcheader_size, args_size);
 
-    std::cout << "----------------------------------" << std::endl;
+   std::cout << "----------------------------------" << std::endl;
     std::cout << "server_name: " << server_name << std::endl;
     std::cout << "method_name: " << method_name << std::endl;
     std::cout << "args_size: " << args_size << std::endl;
     std::cout << "args_str: " << args_str << std::endl;
     std::cout << "----------------------------------" << std::endl;
-
+    
     // 找到对应的服务和方法
     auto sit = serviceMap_.find(server_name);
     if(sit == serviceMap_.end())
@@ -162,6 +162,8 @@ void RpcProvider::sendRpcResponse(const muduo::net::TcpConnectionPtr& conn,  goo
     std::string response_str;
     if(response->SerializeToString(&response_str))
     {
+        std::cout << "sendMsg: " << response_str << std::endl;
+        std::cout << "senMsgsize: " << response_str.size() << std::endl;
         conn->send(response_str);
     }
     else

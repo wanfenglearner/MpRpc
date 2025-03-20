@@ -421,6 +421,35 @@ src/CMakeFiles/mprpc.dir/src/mprpcchannel.cpp.o
  /usr/local/include/google/protobuf/io/zero_copy_stream.h
  /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h
  /usr/local/include/google/protobuf/stubs/stl_util.h
+ /home/robin/project/MpRpc/src/src/rpcheader.pb.h
+ /usr/local/include/google/protobuf/generated_message_table_driven.h
+ /usr/local/include/google/protobuf/map.h
+ /usr/local/include/google/protobuf/map_type_handler.h
+ /usr/local/include/google/protobuf/map_entry_lite.h
+ /usr/local/include/google/protobuf/map_field_lite.h
+ /usr/local/include/google/protobuf/inlined_string_field.h
+ /usr/local/include/google/protobuf/extension_set.h
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert
+ /usr/include/arpa/inet.h
+ /usr/include/netinet/in.h
+ /usr/include/sys/socket.h
+ /usr/include/sys/uio.h
+ /usr/include/bits/uio.h
+ /usr/include/bits/socket.h
+ /usr/include/bits/socket_type.h
+ /usr/include/bits/sockaddr.h
+ /usr/include/asm/socket.h
+ /usr/include/asm-generic/socket.h
+ /usr/include/asm/sockios.h
+ /usr/include/asm-generic/sockios.h
+ /usr/include/bits/in.h
+ /usr/include/unistd.h
+ /usr/include/bits/posix_opt.h
+ /usr/include/bits/environments.h
+ /usr/include/bits/confname.h
+ /usr/include/getopt.h
+ /home/robin/project/MpRpc/src/include/mprpcapplication.h
+ /home/robin/project/MpRpc/src/include/mprpcconfig.h
 
 src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o
  /home/robin/project/MpRpc/src/src/mprpcconfig.cpp

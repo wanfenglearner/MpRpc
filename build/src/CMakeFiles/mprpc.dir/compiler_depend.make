@@ -418,7 +418,36 @@ src/CMakeFiles/mprpc.dir/src/mprpcchannel.cpp.o: ../src/src/mprpcchannel.cpp \
   /usr/local/include/google/protobuf/parse_context.h \
   /usr/local/include/google/protobuf/io/zero_copy_stream.h \
   /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
-  /usr/local/include/google/protobuf/stubs/stl_util.h
+  /usr/local/include/google/protobuf/stubs/stl_util.h \
+  ../src/src/rpcheader.pb.h \
+  /usr/local/include/google/protobuf/generated_message_table_driven.h \
+  /usr/local/include/google/protobuf/map.h \
+  /usr/local/include/google/protobuf/map_type_handler.h \
+  /usr/local/include/google/protobuf/map_entry_lite.h \
+  /usr/local/include/google/protobuf/map_field_lite.h \
+  /usr/local/include/google/protobuf/inlined_string_field.h \
+  /usr/local/include/google/protobuf/extension_set.h \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert \
+  /usr/include/arpa/inet.h \
+  /usr/include/netinet/in.h \
+  /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/include/bits/uio.h \
+  /usr/include/bits/socket.h \
+  /usr/include/bits/socket_type.h \
+  /usr/include/bits/sockaddr.h \
+  /usr/include/asm/socket.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/asm/sockios.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/bits/in.h \
+  /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h \
+  /usr/include/getopt.h \
+  ../src/include/mprpcapplication.h \
+  ../src/include/mprpcconfig.h
 
 src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.o: ../src/src/mprpcconfig.cpp \
   /usr/include/stdc-predef.h \
@@ -1238,18 +1267,6 @@ src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o: ../src/src/rpcprovider.cpp \
 
 /usr/local/include/boost/type_index/stl_type_index.hpp:
 
-/usr/include/asm/sockios.h:
-
-/usr/include/asm-generic/socket.h:
-
-/usr/local/include/boost/type_traits/is_same.hpp:
-
-/usr/local/include/boost/type_traits/detail/is_function_cxx_11.hpp:
-
-/usr/include/asm/socket.h:
-
-/usr/include/netinet/in.h:
-
 /usr/include/muduo/net/InetAddress.h:
 
 /usr/include/muduo/net/Endian.h:
@@ -1298,6 +1315,22 @@ src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o: ../src/src/rpcprovider.cpp \
 
 /usr/local/include/google/protobuf/reflection_ops.h:
 
+../src/src/rpcheader.pb.cc:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/fstream.tcc:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/local/include/boost/type_traits/is_same.hpp:
+
+/usr/local/include/boost/type_traits/detail/is_function_cxx_11.hpp:
+
+/usr/include/asm/socket.h:
+
+/usr/include/netinet/in.h:
+
 /usr/include/muduo/base/CurrentThread.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert:
@@ -1307,10 +1340,6 @@ src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o: ../src/src/rpcprovider.cpp \
 /usr/local/include/google/protobuf/map.h:
 
 /usr/local/include/google/protobuf/generated_message_table_driven.h:
-
-../src/src/rpcheader.pb.cc:
-
-/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/fstream.tcc:
 
 /usr/local/include/google/protobuf/repeated_field.h:
 
@@ -1758,9 +1787,9 @@ src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o: ../src/src/rpcprovider.cpp \
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/ostream.tcc:
 
-/usr/include/sys/socket.h:
-
 /usr/include/muduo/base/copyable.h:
+
+/usr/include/sys/socket.h:
 
 /usr/include/bits/signum.h:
 
@@ -1771,6 +1800,8 @@ src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o: ../src/src/rpcprovider.cpp \
 /usr/include/bits/wchar.h:
 
 ../src/src/mprpcchannel.cpp:
+
+/usr/include/arpa/inet.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/concept_check.h:
 
