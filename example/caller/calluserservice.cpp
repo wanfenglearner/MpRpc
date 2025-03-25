@@ -37,5 +37,17 @@ int main(int argc, char** argv)
         std::cout << "失败: ";
         std::cout << "response.code().errmsg: " << response.code().errmsg() << std::endl;
     }
+
+
+    RPC::RegisterRequest request_reg;
+    request_reg.set_id(1000);
+    request_reg.set_name("张三");
+    request_reg.set_pwd("11111");
+    RPC::RegisterResponse response_reg;
+    stub.Register(nullptr, &request_reg, &response_reg, nullptr);
+
+     std::cout << "success: " << response_reg.success() << " response_reg.rescode().errmsg(): " <<  response_reg.rescode().errmsg() << std::endl;
+    
+
     return 0;
 }

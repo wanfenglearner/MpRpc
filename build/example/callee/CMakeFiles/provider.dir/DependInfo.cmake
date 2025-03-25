@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/robin/project/MpRpc/example/user.pb.cc" "example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o" "gcc" "example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o.d"
-  "/home/robin/project/MpRpc/example/callee/userservice.cpp" "example/callee/CMakeFiles/provider.dir/userservice.cpp.o" "gcc" "example/callee/CMakeFiles/provider.dir/userservice.cpp.o.d"
+  "/home/robin/project/MpRpc/example/friend.pb.cc" "example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o" "gcc" "example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o.d"
+  "/home/robin/project/MpRpc/example/callee/friendservice.cpp" "example/callee/CMakeFiles/provider.dir/friendservice.cpp.o" "gcc" "example/callee/CMakeFiles/provider.dir/friendservice.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -238,6 +238,20 @@ example/callee/CMakeFiles/provider.dir/userservice.cpp.o: \
  /usr/local/include/google/protobuf/service.h \
  /home/robin/project/MpRpc/src/include/mprpcapplication.h \
  /home/robin/project/MpRpc/src/include/mprpcconfig.h \
+ /home/robin/project/MpRpc/src/include/mprpcapplication.h \
+ /home/robin/project/MpRpc/src/include/mprpccontroller.h \
+ /home/robin/project/MpRpc/example/friend.pb.h \
+ /home/robin/project/MpRpc/src/include/mprpcchannel.h \
+ /home/robin/project/MpRpc/src/src/rpcheader.pb.h \
+ /usr/include/arpa/inet.h /usr/include/netinet/in.h \
+ /usr/include/sys/socket.h /usr/include/sys/uio.h /usr/include/bits/uio.h \
+ /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
+ /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h /usr/include/bits/in.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h \
  /home/robin/project/MpRpc/src/include/rpcprovider.h \
  /usr/include/muduo/net/TcpServer.h /usr/include/muduo/base/Atomic.h \
  /usr/include/muduo/base/noncopyable.h /usr/include/muduo/base/Types.h \
@@ -251,9 +265,6 @@ example/callee/CMakeFiles/provider.dir/userservice.cpp.o: \
  /usr/local/include/boost/config/compiler/gcc.hpp \
  /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/environments.h /usr/include/bits/confname.h \
- /usr/include/getopt.h \
  /usr/local/include/boost/config/detail/select_platform_config.hpp \
  /usr/local/include/boost/config/platform/linux.hpp \
  /usr/local/include/boost/config/detail/posix_features.hpp \
@@ -265,13 +276,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/functional \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_function.h \
  /usr/include/muduo/net/Buffer.h /usr/include/muduo/net/Endian.h \
- /usr/include/muduo/net/InetAddress.h /usr/include/netinet/in.h \
- /usr/include/sys/socket.h /usr/include/sys/uio.h /usr/include/bits/uio.h \
- /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
- /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
- /usr/include/asm-generic/sockios.h /usr/include/bits/in.h \
- /usr/local/include/boost/any.hpp /usr/local/include/boost/type_index.hpp \
+ /usr/include/muduo/net/InetAddress.h /usr/local/include/boost/any.hpp \
+ /usr/local/include/boost/type_index.hpp \
  /usr/local/include/boost/type_index/stl_type_index.hpp \
  /usr/local/include/boost/type_index/type_index_facade.hpp \
  /usr/local/include/boost/container_hash/hash_fwd.hpp \

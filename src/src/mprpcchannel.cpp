@@ -1,10 +1,5 @@
 #include "mprpcchannel.h"
-#include "rpcheader.pb.h"
-#include "google/protobuf/service.h"
-#include "google/protobuf/descriptor.h"
-#include <arpa/inet.h>
-#include <unistd.h>
-#include "mprpcapplication.h"
+
 
 // 通过调用该方法, 将参数进行序列化和网络发送
 void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
@@ -29,6 +24,7 @@ void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
    }
     else
     {
+        controller->SetFailed("request->SerializeToString(&args_str) err");
         std::cout << "request->SerializeToString(&args_str) err" << std::endl;
         return;
     }
@@ -55,6 +51,7 @@ void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     }
     else
     {
+        controller->SetFailed("rpcheader.SerializeToString(&rpcheader_str) err");
         std::cout << "rpcheader.SerializeToString(&rpcheader_str) err" << std::endl;
         return;
     }
@@ -72,7 +69,9 @@ void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if(cfd == -1)
     {
         std::cout << "socket err" << std::endl;
-        exit(-1);
+
+        controller->SetFailed("socket err");
+        return;
     }
     // 连接服务器
     short port = std::stoi(MprpcApplication::instance()->getConfig().getFile("rpcserver_port"));
@@ -85,7 +84,8 @@ void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if(-1 == connect(cfd, (struct sockaddr*)&addr, sizeof(addr)))
     {
         std::cout << "connect err" << std::endl;
-        exit(-1);
+        controller->SetFailed("connect err");
+        return;
     }
 
     // 把数据发送出去
@@ -107,6 +107,7 @@ void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
         }
         else
         {
+            controller->SetFailed("send err: ");
             std::cout << "send err: " << sendstr << std::endl;
             close(cfd);
             return;
@@ -118,11 +119,11 @@ void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if (recvsize == -1)
     {
         std::cout << "recv err" << std::endl;
+
+        controller->SetFailed("recv err");
         close(cfd);
         return;
     }
-    std::cout << "buffer: " << buffer << std::endl;
-    std::cout << "recvbuffersize: " << recvsize << std::endl;
     // 将响应的数据添加到 response中
     /*std::string response_str(std::string(buffer), 0, recvsize);
         出现bug string的构造函数遇到/0就结束了
@@ -130,7 +131,7 @@ void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     if(response->ParseFromArray(buffer, recvsize) == false)
     {
         std::cout << "response->ParseFromString(response_str) err. " << buffer << std::endl;
-
+        controller->SetFailed("response->ParseFromString(response_str) err. ");
         close(cfd);
         return;
     }

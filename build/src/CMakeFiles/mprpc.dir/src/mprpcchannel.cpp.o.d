@@ -246,4 +246,7 @@ src/CMakeFiles/mprpc.dir/src/mprpcchannel.cpp.o: \
  /usr/include/bits/environments.h /usr/include/bits/confname.h \
  /usr/include/getopt.h \
  /home/robin/project/MpRpc/src/include/mprpcapplication.h \
- /home/robin/project/MpRpc/src/include/mprpcconfig.h
+ /home/robin/project/MpRpc/src/include/mprpcconfig.h \
+ /home/robin/project/MpRpc/src/include/mprpccontroller.h \
+ /home/robin/project/MpRpc/example/friend.pb.h \
+ /home/robin/project/MpRpc/src/include/mprpcchannel.h

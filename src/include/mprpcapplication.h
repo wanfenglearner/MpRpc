@@ -3,6 +3,11 @@
 #define _MPRPC_APPLICATION_
 
 #include "mprpcconfig.h"
+#include "mprpcapplication.h"
+#include "mprpccontroller.h"
+#include "friend.pb.h"
+#include "mprpcchannel.h"
+
 
 // Mprpc框架的类
 // 实现一个单例模式

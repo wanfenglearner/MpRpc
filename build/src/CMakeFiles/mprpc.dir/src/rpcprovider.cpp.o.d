@@ -256,16 +256,9 @@ src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/unordered_map.h \
  /home/robin/project/MpRpc/src/include/mprpcapplication.h \
  /home/robin/project/MpRpc/src/include/mprpcconfig.h \
- /usr/local/include/google/protobuf/descriptor.h \
- /usr/local/include/google/protobuf/stubs/mutex.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/chrono \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/ratio \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/ctime \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
- /usr/local/include/google/protobuf/stubs/once.h \
- /home/robin/project/MpRpc/src/src/rpcheader.pb.h \
+ /home/robin/project/MpRpc/src/include/mprpcapplication.h \
+ /home/robin/project/MpRpc/src/include/mprpccontroller.h \
+ /home/robin/project/MpRpc/example/friend.pb.h \
  /usr/local/include/google/protobuf/io/coded_stream.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/climits \
  /usr/local/include/google/protobuf/stubs/logging.h \
@@ -283,6 +276,13 @@ src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o: \
  /usr/local/include/google/protobuf/map.h \
  /usr/local/include/google/protobuf/generated_enum_util.h \
  /usr/local/include/google/protobuf/message_lite.h \
+ /usr/local/include/google/protobuf/stubs/once.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/chrono \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ratio \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ctime \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
  /usr/local/include/google/protobuf/map_type_handler.h \
  /usr/local/include/google/protobuf/parse_context.h \
  /usr/local/include/google/protobuf/io/zero_copy_stream.h \
@@ -302,8 +302,14 @@ src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o: \
  /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
  /usr/local/include/google/protobuf/stubs/stl_util.h \
  /usr/local/include/google/protobuf/generated_message_reflection.h \
+ /usr/local/include/google/protobuf/descriptor.h \
+ /usr/local/include/google/protobuf/stubs/mutex.h \
  /usr/local/include/google/protobuf/generated_enum_reflection.h \
  /usr/local/include/google/protobuf/message.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert \
+ /home/robin/project/MpRpc/src/include/mprpcchannel.h \
+ /home/robin/project/MpRpc/src/src/rpcheader.pb.h \
+ /usr/include/arpa/inet.h \
+ /home/robin/project/MpRpc/src/src/rpcheader.pb.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/thread

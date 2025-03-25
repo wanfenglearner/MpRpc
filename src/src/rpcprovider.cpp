@@ -5,6 +5,8 @@
 #include "rpcheader.pb.h"
 #include <functional>
 #include <thread>
+#include <arpa/inet.h>
+
 
 // 将本地服务发布到rpc节点上
 void RpcProvider::notifyService(google::protobuf::Service *service)
@@ -41,8 +43,14 @@ void RpcProvider::run()
     // 定义服务器的ip 端口号
     std::string ip = MprpcApplication::instance()->getConfig().getFile("rpcserver_ip");
     int port = std::stoi(MprpcApplication::instance()->getConfig().getFile("rpcserver_port"));
-    muduo::net::InetAddress addr(ip, port);
 
+    //muduo::net::InetAddress addr(ip, port);
+     struct sockaddr_in addrs;
+    addrs.sin_family = AF_INET;
+    addrs.sin_port = htons(port);
+    addrs.sin_addr.s_addr = inet_addr(ip.c_str());
+
+    muduo::net::InetAddress addr((const sockaddr_in)addrs);
     // 创建服务器
     muduo::net::TcpServer server(&eventLoop_, addr, "Rpcprovider");
 
@@ -68,8 +76,18 @@ void RpcProvider::onConnection(const muduo::net::TcpConnectionPtr & conn)
     // 处理客户端连接信息
     if(!conn->connected())
     {
+
+        std::cout << "-------------------------" << std::endl;
+        std::cout << "关闭连接" << std::endl;
+        std::cout << "-------------------------" << std::endl;
         // 关闭描述符
         conn->shutdown();
+    }
+    else
+    {
+        std::cout << "-------------------------" << std::endl;
+        std::cout << "建立连接" << std::endl;
+        std::cout << "-------------------------" << std::endl;
     }
 }
 // 消息回调
@@ -80,7 +98,7 @@ void RpcProvider::onConnection(const muduo::net::TcpConnectionPtr & conn)
 void RpcProvider::onMessage(const muduo::net::TcpConnectionPtr & conn, muduo::net::Buffer* buffer,muduo::Timestamp)
 {
     std::string buff = buffer->retrieveAllAsString();
-
+    std::cout << "收到的消息: " << buff << std::endl;
     // 先读消息头大小
     int rpcheader_size;
     buff.copy((char *)&rpcheader_size, 4, 0);
@@ -162,8 +180,6 @@ void RpcProvider::sendRpcResponse(const muduo::net::TcpConnectionPtr& conn,  goo
     std::string response_str;
     if(response->SerializeToString(&response_str))
     {
-        std::cout << "sendMsg: " << response_str << std::endl;
-        std::cout << "senMsgsize: " << response_str.size() << std::endl;
         conn->send(response_str);
     }
     else

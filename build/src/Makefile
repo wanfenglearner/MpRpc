@@ -130,6 +130,54 @@ mprpc/fast:
 	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
 .PHONY : mprpc/fast
 
+src/lockqueue.o: src/lockqueue.cpp.o
+.PHONY : src/lockqueue.o
+
+# target to build an object file
+src/lockqueue.cpp.o:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/lockqueue.cpp.o
+.PHONY : src/lockqueue.cpp.o
+
+src/lockqueue.i: src/lockqueue.cpp.i
+.PHONY : src/lockqueue.i
+
+# target to preprocess a source file
+src/lockqueue.cpp.i:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/lockqueue.cpp.i
+.PHONY : src/lockqueue.cpp.i
+
+src/lockqueue.s: src/lockqueue.cpp.s
+.PHONY : src/lockqueue.s
+
+# target to generate assembly for a file
+src/lockqueue.cpp.s:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/lockqueue.cpp.s
+.PHONY : src/lockqueue.cpp.s
+
+src/logger.o: src/logger.cpp.o
+.PHONY : src/logger.o
+
+# target to build an object file
+src/logger.cpp.o:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/logger.cpp.o
+.PHONY : src/logger.cpp.o
+
+src/logger.i: src/logger.cpp.i
+.PHONY : src/logger.i
+
+# target to preprocess a source file
+src/logger.cpp.i:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/logger.cpp.i
+.PHONY : src/logger.cpp.i
+
+src/logger.s: src/logger.cpp.s
+.PHONY : src/logger.s
+
+# target to generate assembly for a file
+src/logger.cpp.s:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/logger.cpp.s
+.PHONY : src/logger.cpp.s
+
 src/mprpcapplication.o: src/mprpcapplication.cpp.o
 .PHONY : src/mprpcapplication.o
 
@@ -202,6 +250,30 @@ src/mprpcconfig.cpp.s:
 	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpcconfig.cpp.s
 .PHONY : src/mprpcconfig.cpp.s
 
+src/mprpccontroller.o: src/mprpccontroller.cpp.o
+.PHONY : src/mprpccontroller.o
+
+# target to build an object file
+src/mprpccontroller.cpp.o:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpccontroller.cpp.o
+.PHONY : src/mprpccontroller.cpp.o
+
+src/mprpccontroller.i: src/mprpccontroller.cpp.i
+.PHONY : src/mprpccontroller.i
+
+# target to preprocess a source file
+src/mprpccontroller.cpp.i:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpccontroller.cpp.i
+.PHONY : src/mprpccontroller.cpp.i
+
+src/mprpccontroller.s: src/mprpccontroller.cpp.s
+.PHONY : src/mprpccontroller.s
+
+# target to generate assembly for a file
+src/mprpccontroller.cpp.s:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/mprpccontroller.cpp.s
+.PHONY : src/mprpccontroller.cpp.s
+
 src/rpcheader.pb.o: src/rpcheader.pb.cc.o
 .PHONY : src/rpcheader.pb.o
 
@@ -259,6 +331,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mprpc"
+	@echo "... src/lockqueue.o"
+	@echo "... src/lockqueue.i"
+	@echo "... src/lockqueue.s"
+	@echo "... src/logger.o"
+	@echo "... src/logger.i"
+	@echo "... src/logger.s"
 	@echo "... src/mprpcapplication.o"
 	@echo "... src/mprpcapplication.i"
 	@echo "... src/mprpcapplication.s"
@@ -268,6 +346,9 @@ help:
 	@echo "... src/mprpcconfig.o"
 	@echo "... src/mprpcconfig.i"
 	@echo "... src/mprpcconfig.s"
+	@echo "... src/mprpccontroller.o"
+	@echo "... src/mprpccontroller.i"
+	@echo "... src/mprpccontroller.s"
 	@echo "... src/rpcheader.pb.o"
 	@echo "... src/rpcheader.pb.i"
 	@echo "... src/rpcheader.pb.s"

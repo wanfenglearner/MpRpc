@@ -128,29 +128,30 @@ example/caller/CMakeFiles/caller.dir/calluserservice.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/hashtable.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/hashtable_policy.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/unordered_map.h \
- /home/robin/project/MpRpc/example/user.pb.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/limits \
- /usr/local/include/google/protobuf/port_def.inc \
- /usr/local/include/google/protobuf/port_undef.inc \
- /usr/local/include/google/protobuf/io/coded_stream.h \
- /usr/include/assert.h /opt/rh/devtoolset-7/root/usr/include/c++/7/atomic \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_base.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_lockfree_defines.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/climits \
+ /home/robin/project/MpRpc/src/include/mprpcapplication.h \
+ /home/robin/project/MpRpc/src/include/mprpccontroller.h \
+ /usr/local/include/google/protobuf/service.h \
+ /usr/local/include/google/protobuf/stubs/callback.h \
+ /usr/local/include/google/protobuf/stubs/macros.h \
+ /usr/local/include/google/protobuf/stubs/port.h /usr/include/assert.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/stdlib.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/cstddef \
+ /usr/include/string.h \
+ /usr/local/include/google/protobuf/stubs/platform_macros.h \
+ /usr/local/include/google/protobuf/port_def.inc /usr/include/sys/param.h \
  /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/include/limits.h \
  /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/cstddef \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/cstring \
- /usr/include/string.h /usr/include/sys/param.h /usr/include/signal.h \
- /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
- /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
- /usr/include/bits/sigstack.h /usr/include/sys/ucontext.h \
- /usr/include/bits/sigthread.h /usr/include/bits/param.h \
- /usr/include/linux/param.h /usr/include/asm/param.h \
- /usr/include/asm-generic/param.h \
+ /usr/include/signal.h /usr/include/bits/signum.h \
+ /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigthread.h \
+ /usr/include/bits/param.h /usr/include/linux/param.h \
+ /usr/include/asm/param.h /usr/include/asm-generic/param.h \
+ /usr/include/byteswap.h \
+ /usr/local/include/google/protobuf/port_undef.inc \
  /usr/local/include/google/protobuf/stubs/common.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/algorithm \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_algo.h \
@@ -159,6 +160,7 @@ example/caller/CMakeFiles/caller.dir/calluserservice.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tempbuf.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_construct.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/uniform_int_dist.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/limits \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/map \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tree.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_map.h \
@@ -173,6 +175,8 @@ example/caller/CMakeFiles/caller.dir/calluserservice.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/allocated_ptr.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/refwrap.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/shared_ptr_atomic.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_base.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_lockfree_defines.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/backward/auto_ptr.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/set \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_set.h \
@@ -181,11 +185,11 @@ example/caller/CMakeFiles/caller.dir/calluserservice.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_vector.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_bvector.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/vector.tcc \
- /usr/local/include/google/protobuf/stubs/port.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/stdlib.h \
- /usr/local/include/google/protobuf/stubs/platform_macros.h \
- /usr/include/byteswap.h \
- /usr/local/include/google/protobuf/stubs/macros.h \
+ /home/robin/project/MpRpc/example/friend.pb.h \
+ /usr/local/include/google/protobuf/io/coded_stream.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/atomic \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/climits \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/cstring \
  /usr/local/include/google/protobuf/stubs/logging.h \
  /usr/local/include/google/protobuf/stubs/strutil.h \
  /usr/local/include/google/protobuf/stubs/stringpiece.h \
@@ -227,7 +231,6 @@ example/caller/CMakeFiles/caller.dir/calluserservice.cpp.o: \
  /usr/local/include/google/protobuf/metadata.h \
  /usr/local/include/google/protobuf/unknown_field_set.h \
  /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
- /usr/local/include/google/protobuf/stubs/callback.h \
  /usr/local/include/google/protobuf/stubs/stl_util.h \
  /usr/local/include/google/protobuf/generated_message_reflection.h \
  /usr/local/include/google/protobuf/descriptor.h \
@@ -236,5 +239,15 @@ example/caller/CMakeFiles/caller.dir/calluserservice.cpp.o: \
  /usr/local/include/google/protobuf/message.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert \
- /usr/local/include/google/protobuf/service.h \
+ /home/robin/project/MpRpc/src/include/mprpcchannel.h \
+ /home/robin/project/MpRpc/src/src/rpcheader.pb.h \
+ /usr/include/arpa/inet.h /usr/include/netinet/in.h \
+ /usr/include/sys/socket.h /usr/include/sys/uio.h /usr/include/bits/uio.h \
+ /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
+ /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h /usr/include/bits/in.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /home/robin/project/MpRpc/example/user.pb.h \
  /home/robin/project/MpRpc/src/include/mprpcchannel.h

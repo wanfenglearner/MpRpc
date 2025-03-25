@@ -48,7 +48,7 @@ struct TableStruct_user_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[3]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[5]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -62,6 +62,12 @@ extern LoginRequestDefaultTypeInternal _LoginRequest_default_instance_;
 class LoginResponse;
 class LoginResponseDefaultTypeInternal;
 extern LoginResponseDefaultTypeInternal _LoginResponse_default_instance_;
+class RegisterRequest;
+class RegisterRequestDefaultTypeInternal;
+extern RegisterRequestDefaultTypeInternal _RegisterRequest_default_instance_;
+class RegisterResponse;
+class RegisterResponseDefaultTypeInternal;
+extern RegisterResponseDefaultTypeInternal _RegisterResponse_default_instance_;
 class ResultCode;
 class ResultCodeDefaultTypeInternal;
 extern ResultCodeDefaultTypeInternal _ResultCode_default_instance_;
@@ -69,6 +75,8 @@ extern ResultCodeDefaultTypeInternal _ResultCode_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::RPC::LoginRequest* Arena::CreateMaybeMessage<::RPC::LoginRequest>(Arena*);
 template<> ::RPC::LoginResponse* Arena::CreateMaybeMessage<::RPC::LoginResponse>(Arena*);
+template<> ::RPC::RegisterRequest* Arena::CreateMaybeMessage<::RPC::RegisterRequest>(Arena*);
+template<> ::RPC::RegisterResponse* Arena::CreateMaybeMessage<::RPC::RegisterResponse>(Arena*);
 template<> ::RPC::ResultCode* Arena::CreateMaybeMessage<::RPC::ResultCode>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace RPC {
@@ -517,6 +525,315 @@ class LoginResponse :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_user_2eproto;
 };
+// -------------------------------------------------------------------
+
+class RegisterRequest :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:RPC.RegisterRequest) */ {
+ public:
+  RegisterRequest();
+  virtual ~RegisterRequest();
+
+  RegisterRequest(const RegisterRequest& from);
+  RegisterRequest(RegisterRequest&& from) noexcept
+    : RegisterRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline RegisterRequest& operator=(const RegisterRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline RegisterRequest& operator=(RegisterRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const RegisterRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const RegisterRequest* internal_default_instance() {
+    return reinterpret_cast<const RegisterRequest*>(
+               &_RegisterRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  friend void swap(RegisterRequest& a, RegisterRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(RegisterRequest* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RegisterRequest* New() const final {
+    return CreateMaybeMessage<RegisterRequest>(nullptr);
+  }
+
+  RegisterRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<RegisterRequest>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const RegisterRequest& from);
+  void MergeFrom(const RegisterRequest& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RegisterRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "RPC.RegisterRequest";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_user_2eproto);
+    return ::descriptor_table_user_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kNameFieldNumber = 2,
+    kPwdFieldNumber = 3,
+    kIdFieldNumber = 1,
+  };
+  // bytes name = 2;
+  void clear_name();
+  const std::string& name() const;
+  void set_name(const std::string& value);
+  void set_name(std::string&& value);
+  void set_name(const char* value);
+  void set_name(const void* value, size_t size);
+  std::string* mutable_name();
+  std::string* release_name();
+  void set_allocated_name(std::string* name);
+  private:
+  const std::string& _internal_name() const;
+  void _internal_set_name(const std::string& value);
+  std::string* _internal_mutable_name();
+  public:
+
+  // bytes pwd = 3;
+  void clear_pwd();
+  const std::string& pwd() const;
+  void set_pwd(const std::string& value);
+  void set_pwd(std::string&& value);
+  void set_pwd(const char* value);
+  void set_pwd(const void* value, size_t size);
+  std::string* mutable_pwd();
+  std::string* release_pwd();
+  void set_allocated_pwd(std::string* pwd);
+  private:
+  const std::string& _internal_pwd() const;
+  void _internal_set_pwd(const std::string& value);
+  std::string* _internal_mutable_pwd();
+  public:
+
+  // int32 id = 1;
+  void clear_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 id() const;
+  void set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_id() const;
+  void _internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:RPC.RegisterRequest)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr pwd_;
+  ::PROTOBUF_NAMESPACE_ID::int32 id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_user_2eproto;
+};
+// -------------------------------------------------------------------
+
+class RegisterResponse :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:RPC.RegisterResponse) */ {
+ public:
+  RegisterResponse();
+  virtual ~RegisterResponse();
+
+  RegisterResponse(const RegisterResponse& from);
+  RegisterResponse(RegisterResponse&& from) noexcept
+    : RegisterResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline RegisterResponse& operator=(const RegisterResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline RegisterResponse& operator=(RegisterResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const RegisterResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const RegisterResponse* internal_default_instance() {
+    return reinterpret_cast<const RegisterResponse*>(
+               &_RegisterResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    4;
+
+  friend void swap(RegisterResponse& a, RegisterResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(RegisterResponse* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RegisterResponse* New() const final {
+    return CreateMaybeMessage<RegisterResponse>(nullptr);
+  }
+
+  RegisterResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<RegisterResponse>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const RegisterResponse& from);
+  void MergeFrom(const RegisterResponse& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RegisterResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "RPC.RegisterResponse";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_user_2eproto);
+    return ::descriptor_table_user_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kRescodeFieldNumber = 1,
+    kSuccessFieldNumber = 2,
+  };
+  // .RPC.ResultCode rescode = 1;
+  bool has_rescode() const;
+  private:
+  bool _internal_has_rescode() const;
+  public:
+  void clear_rescode();
+  const ::RPC::ResultCode& rescode() const;
+  ::RPC::ResultCode* release_rescode();
+  ::RPC::ResultCode* mutable_rescode();
+  void set_allocated_rescode(::RPC::ResultCode* rescode);
+  private:
+  const ::RPC::ResultCode& _internal_rescode() const;
+  ::RPC::ResultCode* _internal_mutable_rescode();
+  public:
+
+  // bool success = 2;
+  void clear_success();
+  bool success() const;
+  void set_success(bool value);
+  private:
+  bool _internal_success() const;
+  void _internal_set_success(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:RPC.RegisterResponse)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::RPC::ResultCode* rescode_;
+  bool success_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_user_2eproto;
+};
 // ===================================================================
 
 class UserServiceRpc_Stub;
@@ -535,6 +852,10 @@ class UserServiceRpc : public ::PROTOBUF_NAMESPACE_ID::Service {
   virtual void Login(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
                        const ::RPC::LoginRequest* request,
                        ::RPC::LoginResponse* response,
+                       ::google::protobuf::Closure* done);
+  virtual void Register(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
+                       const ::RPC::RegisterRequest* request,
+                       ::RPC::RegisterResponse* response,
                        ::google::protobuf::Closure* done);
 
   // implements Service ----------------------------------------------
@@ -568,6 +889,10 @@ class UserServiceRpc_Stub : public UserServiceRpc {
   void Login(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
                        const ::RPC::LoginRequest* request,
                        ::RPC::LoginResponse* response,
+                       ::google::protobuf::Closure* done);
+  void Register(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
+                       const ::RPC::RegisterRequest* request,
+                       ::RPC::RegisterResponse* response,
                        ::google::protobuf::Closure* done);
  private:
   ::PROTOBUF_NAMESPACE_ID::RpcChannel* channel_;
@@ -875,9 +1200,241 @@ inline void LoginResponse::set_success(bool value) {
   // @@protoc_insertion_point(field_set:RPC.LoginResponse.success)
 }
 
+// -------------------------------------------------------------------
+
+// RegisterRequest
+
+// int32 id = 1;
+inline void RegisterRequest::clear_id() {
+  id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RegisterRequest::_internal_id() const {
+  return id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RegisterRequest::id() const {
+  // @@protoc_insertion_point(field_get:RPC.RegisterRequest.id)
+  return _internal_id();
+}
+inline void RegisterRequest::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  id_ = value;
+}
+inline void RegisterRequest::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:RPC.RegisterRequest.id)
+}
+
+// bytes name = 2;
+inline void RegisterRequest::clear_name() {
+  name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& RegisterRequest::name() const {
+  // @@protoc_insertion_point(field_get:RPC.RegisterRequest.name)
+  return _internal_name();
+}
+inline void RegisterRequest::set_name(const std::string& value) {
+  _internal_set_name(value);
+  // @@protoc_insertion_point(field_set:RPC.RegisterRequest.name)
+}
+inline std::string* RegisterRequest::mutable_name() {
+  // @@protoc_insertion_point(field_mutable:RPC.RegisterRequest.name)
+  return _internal_mutable_name();
+}
+inline const std::string& RegisterRequest::_internal_name() const {
+  return name_.GetNoArena();
+}
+inline void RegisterRequest::_internal_set_name(const std::string& value) {
+  
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+}
+inline void RegisterRequest::set_name(std::string&& value) {
+  
+  name_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:RPC.RegisterRequest.name)
+}
+inline void RegisterRequest::set_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:RPC.RegisterRequest.name)
+}
+inline void RegisterRequest::set_name(const void* value, size_t size) {
+  
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:RPC.RegisterRequest.name)
+}
+inline std::string* RegisterRequest::_internal_mutable_name() {
+  
+  return name_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* RegisterRequest::release_name() {
+  // @@protoc_insertion_point(field_release:RPC.RegisterRequest.name)
+  
+  return name_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void RegisterRequest::set_allocated_name(std::string* name) {
+  if (name != nullptr) {
+    
+  } else {
+    
+  }
+  name_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), name);
+  // @@protoc_insertion_point(field_set_allocated:RPC.RegisterRequest.name)
+}
+
+// bytes pwd = 3;
+inline void RegisterRequest::clear_pwd() {
+  pwd_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& RegisterRequest::pwd() const {
+  // @@protoc_insertion_point(field_get:RPC.RegisterRequest.pwd)
+  return _internal_pwd();
+}
+inline void RegisterRequest::set_pwd(const std::string& value) {
+  _internal_set_pwd(value);
+  // @@protoc_insertion_point(field_set:RPC.RegisterRequest.pwd)
+}
+inline std::string* RegisterRequest::mutable_pwd() {
+  // @@protoc_insertion_point(field_mutable:RPC.RegisterRequest.pwd)
+  return _internal_mutable_pwd();
+}
+inline const std::string& RegisterRequest::_internal_pwd() const {
+  return pwd_.GetNoArena();
+}
+inline void RegisterRequest::_internal_set_pwd(const std::string& value) {
+  
+  pwd_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+}
+inline void RegisterRequest::set_pwd(std::string&& value) {
+  
+  pwd_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:RPC.RegisterRequest.pwd)
+}
+inline void RegisterRequest::set_pwd(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  pwd_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:RPC.RegisterRequest.pwd)
+}
+inline void RegisterRequest::set_pwd(const void* value, size_t size) {
+  
+  pwd_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:RPC.RegisterRequest.pwd)
+}
+inline std::string* RegisterRequest::_internal_mutable_pwd() {
+  
+  return pwd_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* RegisterRequest::release_pwd() {
+  // @@protoc_insertion_point(field_release:RPC.RegisterRequest.pwd)
+  
+  return pwd_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void RegisterRequest::set_allocated_pwd(std::string* pwd) {
+  if (pwd != nullptr) {
+    
+  } else {
+    
+  }
+  pwd_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), pwd);
+  // @@protoc_insertion_point(field_set_allocated:RPC.RegisterRequest.pwd)
+}
+
+// -------------------------------------------------------------------
+
+// RegisterResponse
+
+// .RPC.ResultCode rescode = 1;
+inline bool RegisterResponse::_internal_has_rescode() const {
+  return this != internal_default_instance() && rescode_ != nullptr;
+}
+inline bool RegisterResponse::has_rescode() const {
+  return _internal_has_rescode();
+}
+inline void RegisterResponse::clear_rescode() {
+  if (GetArenaNoVirtual() == nullptr && rescode_ != nullptr) {
+    delete rescode_;
+  }
+  rescode_ = nullptr;
+}
+inline const ::RPC::ResultCode& RegisterResponse::_internal_rescode() const {
+  const ::RPC::ResultCode* p = rescode_;
+  return p != nullptr ? *p : *reinterpret_cast<const ::RPC::ResultCode*>(
+      &::RPC::_ResultCode_default_instance_);
+}
+inline const ::RPC::ResultCode& RegisterResponse::rescode() const {
+  // @@protoc_insertion_point(field_get:RPC.RegisterResponse.rescode)
+  return _internal_rescode();
+}
+inline ::RPC::ResultCode* RegisterResponse::release_rescode() {
+  // @@protoc_insertion_point(field_release:RPC.RegisterResponse.rescode)
+  
+  ::RPC::ResultCode* temp = rescode_;
+  rescode_ = nullptr;
+  return temp;
+}
+inline ::RPC::ResultCode* RegisterResponse::_internal_mutable_rescode() {
+  
+  if (rescode_ == nullptr) {
+    auto* p = CreateMaybeMessage<::RPC::ResultCode>(GetArenaNoVirtual());
+    rescode_ = p;
+  }
+  return rescode_;
+}
+inline ::RPC::ResultCode* RegisterResponse::mutable_rescode() {
+  // @@protoc_insertion_point(field_mutable:RPC.RegisterResponse.rescode)
+  return _internal_mutable_rescode();
+}
+inline void RegisterResponse::set_allocated_rescode(::RPC::ResultCode* rescode) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete rescode_;
+  }
+  if (rescode) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      rescode = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, rescode, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  rescode_ = rescode;
+  // @@protoc_insertion_point(field_set_allocated:RPC.RegisterResponse.rescode)
+}
+
+// bool success = 2;
+inline void RegisterResponse::clear_success() {
+  success_ = false;
+}
+inline bool RegisterResponse::_internal_success() const {
+  return success_;
+}
+inline bool RegisterResponse::success() const {
+  // @@protoc_insertion_point(field_get:RPC.RegisterResponse.success)
+  return _internal_success();
+}
+inline void RegisterResponse::_internal_set_success(bool value) {
+  
+  success_ = value;
+}
+inline void RegisterResponse::set_success(bool value) {
+  _internal_set_success(value);
+  // @@protoc_insertion_point(field_set:RPC.RegisterResponse.success)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

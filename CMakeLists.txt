@@ -16,6 +16,8 @@ link_directories(/usr/local/lib ${CMAKE_SOURCE_DIR}/lib)
 #头文件搜索路径
 include_directories(${CMAKE_SOURCE_DIR}/example)
 include_directories(${CMAKE_SOURCE_DIR}/src/include)
+include_directories(${CMAKE_SOURCE_DIR}/src/src)
+
 
 #存放mprpc框架的目录
 add_subdirectory(src)

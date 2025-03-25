@@ -1,0 +1,23 @@
+
+
+syntax = "proto3";
+
+package RPC;
+
+option cc_generic_services = true;
+
+// 得到好友的信息请求
+message GetFriendRequest
+{
+    int32 id = 1;
+}
+// 得到好友的信息响应
+message GetFriendResponse
+{ 
+    repeated bytes friends = 1;
+}
+
+service FriendService
+{
+    rpc GetFriend(GetFriendRequest) returns(GetFriendResponse);
+}

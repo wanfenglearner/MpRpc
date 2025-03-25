@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "../../../bin/provider"
   "../../../bin/provider.pdb"
-  "CMakeFiles/provider.dir/__/user.pb.cc.o"
-  "CMakeFiles/provider.dir/__/user.pb.cc.o.d"
-  "CMakeFiles/provider.dir/userservice.cpp.o"
-  "CMakeFiles/provider.dir/userservice.cpp.o.d"
+  "CMakeFiles/provider.dir/__/friend.pb.cc.o"
+  "CMakeFiles/provider.dir/__/friend.pb.cc.o.d"
+  "CMakeFiles/provider.dir/friendservice.cpp.o"
+  "CMakeFiles/provider.dir/friendservice.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

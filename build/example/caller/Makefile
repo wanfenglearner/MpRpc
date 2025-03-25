@@ -130,53 +130,53 @@ caller/fast:
 	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/build
 .PHONY : caller/fast
 
-__/user.pb.o: __/user.pb.cc.o
-.PHONY : __/user.pb.o
+__/friend.pb.o: __/friend.pb.cc.o
+.PHONY : __/friend.pb.o
 
 # target to build an object file
-__/user.pb.cc.o:
-	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/__/user.pb.cc.o
-.PHONY : __/user.pb.cc.o
+__/friend.pb.cc.o:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/__/friend.pb.cc.o
+.PHONY : __/friend.pb.cc.o
 
-__/user.pb.i: __/user.pb.cc.i
-.PHONY : __/user.pb.i
+__/friend.pb.i: __/friend.pb.cc.i
+.PHONY : __/friend.pb.i
 
 # target to preprocess a source file
-__/user.pb.cc.i:
-	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/__/user.pb.cc.i
-.PHONY : __/user.pb.cc.i
+__/friend.pb.cc.i:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/__/friend.pb.cc.i
+.PHONY : __/friend.pb.cc.i
 
-__/user.pb.s: __/user.pb.cc.s
-.PHONY : __/user.pb.s
+__/friend.pb.s: __/friend.pb.cc.s
+.PHONY : __/friend.pb.s
 
 # target to generate assembly for a file
-__/user.pb.cc.s:
-	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/__/user.pb.cc.s
-.PHONY : __/user.pb.cc.s
+__/friend.pb.cc.s:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/__/friend.pb.cc.s
+.PHONY : __/friend.pb.cc.s
 
-calluserservice.o: calluserservice.cpp.o
-.PHONY : calluserservice.o
+callfriendservice.o: callfriendservice.cpp.o
+.PHONY : callfriendservice.o
 
 # target to build an object file
-calluserservice.cpp.o:
-	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/calluserservice.cpp.o
-.PHONY : calluserservice.cpp.o
+callfriendservice.cpp.o:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/callfriendservice.cpp.o
+.PHONY : callfriendservice.cpp.o
 
-calluserservice.i: calluserservice.cpp.i
-.PHONY : calluserservice.i
+callfriendservice.i: callfriendservice.cpp.i
+.PHONY : callfriendservice.i
 
 # target to preprocess a source file
-calluserservice.cpp.i:
-	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/calluserservice.cpp.i
-.PHONY : calluserservice.cpp.i
+callfriendservice.cpp.i:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/callfriendservice.cpp.i
+.PHONY : callfriendservice.cpp.i
 
-calluserservice.s: calluserservice.cpp.s
-.PHONY : calluserservice.s
+callfriendservice.s: callfriendservice.cpp.s
+.PHONY : callfriendservice.s
 
 # target to generate assembly for a file
-calluserservice.cpp.s:
-	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/calluserservice.cpp.s
-.PHONY : calluserservice.cpp.s
+callfriendservice.cpp.s:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/caller.dir/build.make example/caller/CMakeFiles/caller.dir/callfriendservice.cpp.s
+.PHONY : callfriendservice.cpp.s
 
 # Help Target
 help:
@@ -187,12 +187,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... caller"
-	@echo "... __/user.pb.o"
-	@echo "... __/user.pb.i"
-	@echo "... __/user.pb.s"
-	@echo "... calluserservice.o"
-	@echo "... calluserservice.i"
-	@echo "... calluserservice.s"
+	@echo "... __/friend.pb.o"
+	@echo "... __/friend.pb.i"
+	@echo "... __/friend.pb.s"
+	@echo "... callfriendservice.o"
+	@echo "... callfriendservice.i"
+	@echo "... callfriendservice.s"
 .PHONY : help
 
 
