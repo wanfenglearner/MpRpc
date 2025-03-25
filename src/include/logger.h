@@ -14,6 +14,8 @@ class Logger
 {
 
 public:
+    // 获得单例
+    static Logger *instance();
     // 设置日志级别
     void setLevel(LogLevel level);
     // 添加日志
@@ -23,6 +25,11 @@ private:
     // 记录所记录日志的级别
     int logLevel_;
     LockQueue<std::string> lockque_;
+private:
+    // 构造函数
+    Logger();
+    Logger(const Logger &) = delete;
+    Logger( Logger &&) = delete;
 };
 
 #endif 
