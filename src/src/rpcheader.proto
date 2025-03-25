@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Header;
+
+message Rpcheader
+{
+    // 服务名字
+   bytes server_name = 1;
+    // 方法名字
+   bytes method_name = 2;
+   // 请求的参数大小
+   int32 args_size = 3;
+}
