@@ -126,4 +126,39 @@ src/CMakeFiles/mprpc.dir/src/logger.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/allocated_ptr.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/refwrap.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/ext/aligned_buffer.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/thread \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/memory \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tempbuf.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_raw_storage_iter.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/shared_ptr_atomic.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_base.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_lockfree_defines.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/backward/auto_ptr.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/fstream \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/istream \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ios \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/ios_base.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_classes.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_classes.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/streambuf \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/streambuf.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/basic_ios.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_facets.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/cwctype \
+ /usr/include/wctype.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/ctype_base.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/streambuf_iterator.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/ctype_inline.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_facets.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/basic_ios.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ostream \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/ostream.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/istream.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/codecvt.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/basic_file.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++io.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/fstream.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/cstring \
+ /usr/include/string.h

@@ -5,6 +5,7 @@
 #include "mprpcapplication.h"
 #include "mprpcchannel.h"
 #include "rpcprovider.h"
+#include "logger.h"
 
 class FriendService : public RPC::FriendService
 {
@@ -40,6 +41,8 @@ public:
 
 int main(int argc, char** argv)
 {
+    // 测试日志的使用
+    LOG_INFO("测试日志");
     // 加载配置文件
     MprpcApplication::instance()->init(argc, argv);
 

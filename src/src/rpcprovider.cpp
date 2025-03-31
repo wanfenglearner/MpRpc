@@ -6,7 +6,7 @@
 #include <functional>
 #include <thread>
 #include <arpa/inet.h>
-
+#include "zookeeper.h"
 
 // 将本地服务发布到rpc节点上
 void RpcProvider::notifyService(google::protobuf::Service *service)
@@ -15,7 +15,7 @@ void RpcProvider::notifyService(google::protobuf::Service *service)
     ServiceInof serviceinfo;
     // 获得该服务对象的描述信息
     const google::protobuf::ServiceDescriptor *pserviceDesc = service->GetDescriptor();
-
+   
     //该服务的名字
     const std::string service_name = pserviceDesc->name();
     std::cout << "service_name: " << service_name << std::endl;
@@ -61,11 +61,35 @@ void RpcProvider::run()
     // 设置muduo网络库的线程数量
     server.setThreadNum(std::thread::hardware_concurrency());
 
+    // 把当前rpc节点上要发布的服务全部注册到zk上，让rpc client可以从zk上发现服务
+    // session timeout 30s zkclient 网络IO线程 1/3 * timeout时间发送ping消息
+    ZkClient zkCli;
+    zkCli.Start();
+
+    // service_name为永久性节点， method为临时性节点
+    for (const auto &sp : serviceMap_)
+    {
+        // 组织服务节点路径
+        std::string service_path = "/" + sp.first;
+        zkCli.Create(service_path.c_str(), nullptr, 0);
+        for (const auto &mp : sp.second.methodMap_)
+        {
+            // 组织方法节点路径
+            std::string method_path = service_path + "/" + mp.first;
+            // 方法节点的数据，即ip+port
+            char method_path_data[128] = {0};
+            sprintf(method_path_data, "%s:%d", ip.c_str(), port);
+            // ZOO_EPHEMERAL代表是临时节点
+            zkCli.Create(method_path.c_str(), method_path_data, strlen(method_path_data), ZOO_EPHEMERAL);
+        }
+    }
+
     std::cout << "rpc节点服务器启动" << "rpcserver_ip: " << ip << " rpcserver_port: " << port << std::endl;
+
     // 启动服务器
     server.start();
 
-    // 启动时间循环
+    // 启动事件循环
     eventLoop_.loop();
 }
 

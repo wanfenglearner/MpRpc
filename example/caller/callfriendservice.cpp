@@ -1,11 +1,12 @@
 
 #include <iostream>
 #include "mprpcapplication.h"
-
+#include "logger.h"
 
 
 int main(int argc, char** argv)
 {
+
     // 初始化框架
     MprpcApplication::instance()->init(argc, argv);
 

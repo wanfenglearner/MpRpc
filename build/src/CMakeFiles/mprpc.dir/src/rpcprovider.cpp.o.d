@@ -312,4 +312,11 @@ src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.o: \
  /home/robin/project/MpRpc/src/src/rpcheader.pb.h \
  /usr/include/arpa/inet.h \
  /home/robin/project/MpRpc/src/src/rpcheader.pb.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/thread
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/thread \
+ /home/robin/project/MpRpc/src/include/zookeeper.h \
+ /usr/include/semaphore.h /usr/include/bits/semaphore.h \
+ /usr/local/include/zookeeper/zookeeper.h /usr/include/sys/time.h \
+ /usr/local/include/zookeeper/proto.h \
+ /usr/local/include/zookeeper/zookeeper_version.h \
+ /usr/local/include/zookeeper/recordio.h \
+ /usr/local/include/zookeeper/zookeeper.jute.h

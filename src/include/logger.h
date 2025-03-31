@@ -3,6 +3,28 @@
 
 #include "lockqueue.h"
 
+
+// 定义宏 LOG_INFO("xxx %d %s", 20, "xxxx")
+#define LOG_INFO(logmsgformat, ...) \
+    do \
+    {  \
+        Logger *logger = Logger::instance(); \
+        logger->setLevel(Level_Info); \
+        char c[1024] = {0}; \
+        snprintf(c, 1024, logmsgformat, ##__VA_ARGS__); \
+        logger->Log(c); \
+    } while(0) \
+
+#define LOG_ERR(logmsgformat, ...) \
+    do \
+    {  \
+        Logger *logger = Logger::instance(); \
+        logger->setLevel(Level_Error; \
+        char c[1024] = {0}; \
+        snprintf(c, 1024, logmsgformat, ##__VA_ARGS__); \
+        logger->Log(c); \
+    } while(0) \
+
 // 表示消息的类型
 enum LogLevel
 {
@@ -32,4 +54,5 @@ private:
     Logger( Logger &&) = delete;
 };
 
-#endif 
+#endif
+

@@ -219,7 +219,7 @@ Mprpc_IS_TOP_LEVEL:STATIC=ON
 Mprpc_SOURCE_DIR:STATIC=/home/robin/project/MpRpc
 
 //Dependencies for the target
-mprpc_LIB_DEPENDS:STATIC=general;muduo_net;general;muduo_base;general;pthread;
+mprpc_LIB_DEPENDS:STATIC=general;muduo_net;general;muduo_base;general;pthread;general;zookeeper_mt;
 
 
 ########################

@@ -1,5 +1,5 @@
 #include "mprpcchannel.h"
-
+#include "zookeeper.h"
 
 // 通过调用该方法, 将参数进行序列化和网络发送
 void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
@@ -73,9 +73,35 @@ void MprcpChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
         controller->SetFailed("socket err");
         return;
     }
+
+    /*
+
     // 连接服务器
     short port = std::stoi(MprpcApplication::instance()->getConfig().getFile("rpcserver_port"));
     std::string ip = MprpcApplication::instance()->getConfig().getFile("rpcserver_ip");
+
+    */
+
+    ZkClient zkCli;
+    zkCli.Start();
+
+    std::string method_path = "/" + server_name + "/" + method_name;
+    std::string host_data = zkCli.GetData(method_path.c_str());
+
+    if(host_data == "")
+    {
+        controller->SetFailed(method_path + "is not exist");
+        return;
+    }
+    int idx = host_data.find(":");
+    if(idx == -1)
+    {
+         controller->SetFailed(method_path + " address is invalid!");
+        return;
+    }
+    std::string ip = host_data.substr(0, idx);
+    int port = std::stoi(host_data.substr(idx + 1));
+
     struct sockaddr_in addr;
     addr.sin_family = AF_INET;
     addr.sin_port = htons(port);

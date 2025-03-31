@@ -634,8 +634,20 @@ example/callee/CMakeFiles/provider.dir/friendservice.cpp.o: ../example/callee/fr
   /usr/include/muduo/net/EventLoop.h \
   /usr/include/muduo/base/Mutex.h \
   /usr/include/muduo/base/CurrentThread.h \
-  /usr/include/muduo/net/TimerId.h
+  /usr/include/muduo/net/TimerId.h \
+  ../src/include/logger.h \
+  ../src/include/lockqueue.h \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/queue \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/deque \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_deque.h \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/deque.tcc \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_queue.h \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable
 
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/deque:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/queue:
 
 /usr/include/muduo/net/TimerId.h:
 
@@ -739,6 +751,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cpp.o: ../example/callee/fr
 
 /usr/local/include/google/protobuf/reflection_ops.h:
 
+/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_queue.h:
+
 /usr/local/include/google/protobuf/service.h:
 
 /usr/include/muduo/base/CurrentThread.h:
@@ -828,6 +842,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cpp.o: ../example/callee/fr
 /opt/rh/devtoolset-7/root/usr/include/c++/7/set:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/backward/auto_ptr.h:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/condition_variable:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/allocated_ptr.h:
 
@@ -964,6 +980,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cpp.o: ../example/callee/fr
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/uses_allocator.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_multimap.h:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/deque.tcc:
 
 /usr/include/wchar.h:
 
@@ -1147,6 +1165,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cpp.o: ../example/callee/fr
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/ext/aligned_buffer.h:
 
+/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_deque.h:
+
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h:
 
 /usr/include/errno.h:
@@ -1194,6 +1214,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cpp.o: ../example/callee/fr
 /usr/include/libio.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/basic_string.tcc:
+
+../src/include/lockqueue.h:
 
 /usr/local/include/google/protobuf/port_undef.inc:
 
@@ -1354,6 +1376,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cpp.o: ../example/callee/fr
 /usr/include/xlocale.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/invoke.h:
+
+../src/include/logger.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_uninitialized.h:
 

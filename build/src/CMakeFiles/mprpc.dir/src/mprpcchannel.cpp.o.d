@@ -249,4 +249,11 @@ src/CMakeFiles/mprpc.dir/src/mprpcchannel.cpp.o: \
  /home/robin/project/MpRpc/src/include/mprpcconfig.h \
  /home/robin/project/MpRpc/src/include/mprpccontroller.h \
  /home/robin/project/MpRpc/example/friend.pb.h \
- /home/robin/project/MpRpc/src/include/mprpcchannel.h
+ /home/robin/project/MpRpc/src/include/mprpcchannel.h \
+ /home/robin/project/MpRpc/src/include/zookeeper.h \
+ /usr/include/semaphore.h /usr/include/bits/semaphore.h \
+ /usr/local/include/zookeeper/zookeeper.h /usr/include/sys/time.h \
+ /usr/local/include/zookeeper/proto.h \
+ /usr/local/include/zookeeper/zookeeper_version.h \
+ /usr/local/include/zookeeper/recordio.h \
+ /usr/local/include/zookeeper/zookeeper.jute.h

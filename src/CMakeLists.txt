@@ -6,6 +6,6 @@ link_libraries(muduo_net muduo_base)
 #生成动态库
 add_library(mprpc STATIC ${SRC})
 #链接pthread动态库
-target_link_libraries(mprpc pthread)
+target_link_libraries(mprpc pthread zookeeper_mt)
 
 

@@ -130,30 +130,6 @@ mprpc/fast:
 	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
 .PHONY : mprpc/fast
 
-src/lockqueue.o: src/lockqueue.cpp.o
-.PHONY : src/lockqueue.o
-
-# target to build an object file
-src/lockqueue.cpp.o:
-	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/lockqueue.cpp.o
-.PHONY : src/lockqueue.cpp.o
-
-src/lockqueue.i: src/lockqueue.cpp.i
-.PHONY : src/lockqueue.i
-
-# target to preprocess a source file
-src/lockqueue.cpp.i:
-	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/lockqueue.cpp.i
-.PHONY : src/lockqueue.cpp.i
-
-src/lockqueue.s: src/lockqueue.cpp.s
-.PHONY : src/lockqueue.s
-
-# target to generate assembly for a file
-src/lockqueue.cpp.s:
-	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/lockqueue.cpp.s
-.PHONY : src/lockqueue.cpp.s
-
 src/logger.o: src/logger.cpp.o
 .PHONY : src/logger.o
 
@@ -322,6 +298,30 @@ src/rpcprovider.cpp.s:
 	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/rpcprovider.cpp.s
 .PHONY : src/rpcprovider.cpp.s
 
+src/zookeeper.o: src/zookeeper.cpp.o
+.PHONY : src/zookeeper.o
+
+# target to build an object file
+src/zookeeper.cpp.o:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/zookeeper.cpp.o
+.PHONY : src/zookeeper.cpp.o
+
+src/zookeeper.i: src/zookeeper.cpp.i
+.PHONY : src/zookeeper.i
+
+# target to preprocess a source file
+src/zookeeper.cpp.i:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/zookeeper.cpp.i
+.PHONY : src/zookeeper.cpp.i
+
+src/zookeeper.s: src/zookeeper.cpp.s
+.PHONY : src/zookeeper.s
+
+# target to generate assembly for a file
+src/zookeeper.cpp.s:
+	cd /home/robin/project/MpRpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/src/zookeeper.cpp.s
+.PHONY : src/zookeeper.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -331,9 +331,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mprpc"
-	@echo "... src/lockqueue.o"
-	@echo "... src/lockqueue.i"
-	@echo "... src/lockqueue.s"
 	@echo "... src/logger.o"
 	@echo "... src/logger.i"
 	@echo "... src/logger.s"
@@ -355,6 +352,9 @@ help:
 	@echo "... src/rpcprovider.o"
 	@echo "... src/rpcprovider.i"
 	@echo "... src/rpcprovider.s"
+	@echo "... src/zookeeper.o"
+	@echo "... src/zookeeper.i"
+	@echo "... src/zookeeper.s"
 .PHONY : help
 
 
