@@ -3,3 +3,4 @@ bin/*
 !bin/.gitkeep
 build/
 !build/.gitkeep
+!build/ConfigFile.conf
