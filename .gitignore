@@ -1,6 +1,6 @@
 .vscode/
 bin/*
 !bin/.gitkeep
-build/
+build/*
 !build/.gitkeep
 !build/ConfigFile.conf
